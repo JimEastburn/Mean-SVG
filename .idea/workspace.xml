@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e183f6-2e9b-4940-af2d-1df46b727512" name="Default" comment="adding Snap.svg to project using bower">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/common.css" afterPath="$PROJECT_DIR$/public/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.jade" afterPath="$PROJECT_DIR$/app/views/layouts/default.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="$PROJECT_DIR$/app/views/includes/foot.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/head.jade" afterPath="$PROJECT_DIR$/app/views/includes/head.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/index.html" afterPath="$PROJECT_DIR$/public/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385132426943" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385066088213" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385132492956" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385073075258" ignored="false" />
     <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384986230933" ignored="false" />
@@ -466,7 +462,11 @@
       <created>1384985568440</created>
       <updated>1384985568440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first layout attempt using bootstrap 2 and jade">
+      <created>1385132502078</created>
+      <updated>1385132502078</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,7 +543,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Snap.svg to project using bower" />
+    <option name="LAST_COMMIT_MESSAGE" value="first layout attempt using bootstrap 2 and jade" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -559,6 +559,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="adding Snap.svg to project using bower" />
+    <MESSAGE value="first layout attempt using bootstrap 2 and jade" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

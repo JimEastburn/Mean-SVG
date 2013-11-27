@@ -2,13 +2,18 @@
 	<h1>This is the home view</h1>
     <div class="row-fluid">
         <div class="span2" style="background-color: blue; ">
-            <div style="background-color: white; height: 700px; margin: 5px">
+            <div id="tools" style="background-color: gray; height: 700px; margin: 5px">
+                <button style="margin:25%" ng-click="addTextBox()" class="btn btn-large btn-primary" type="button">Add text</button>
+                <button style="margin:20%" ng-click="addCircle()" class="btn btn-large btn-primary" type="button">Add circle</button>
 
             </div>
         </div>
         <div class="span10" style="background-color: black; ">
-            <div style="background-color: white; height: 700px; margin: 5px">
-                
+            <div id="mainBody" style="background-color: white; height: 700px; margin: 5px">
+
+                <svg id="svg" height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
+
+                </svg>
             </div>
         </div>
     </div>

@@ -8,16 +8,20 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
     };
 
     $scope.outputPdf = function(){
-        var doc = new jsPDF();
-        doc.text(20, 20, 'Hello world.');
-        doc.save('Test.pdf');
-
 //        var doc = new jsPDF();
-//        var s = Snap("#svg");
-//
-//        var svgPdf = new svgElementToPdf(s, doc, options)
-//
-//        svgPdf.save('Test.pdf');
+//        doc.text(20, 20, 'Hello world.');
+//        doc.save('Test.pdf');
+
+        var doc = new jsPDF();
+        var s = $("#svg");
+        var options = {};
+        options.removeInvalid = false;
+        options.x_offset = 0;
+        options.y_offset = 0;
+        options.ego_or_link = false;
+        var svgPdf = doc.svgElementToPdf(s, doc, options);
+
+        svgPdf.save('Test.pdf');
 
     };
 

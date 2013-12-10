@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19e183f6-2e9b-4940-af2d-1df46b727512" name="Default" comment="addText and addCircle functions">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/articles.js" afterPath="$PROJECT_DIR$/app/controllers/articles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+    <list default="true" id="19e183f6-2e9b-4940-af2d-1df46b727512" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="$PROJECT_DIR$/app/views/includes/foot.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/index.html" afterPath="$PROJECT_DIR$/public/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/index.js" afterPath="$PROJECT_DIR$/public/js/controllers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386345051219" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386338768832" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386701095054" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386698535491" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386105631797" ignored="false" />
-    <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386340757726" ignored="false" />
+    <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386699770924" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/Photo.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385048160219" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/security.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385049174520" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/index.template.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385049174520" ignored="false" />
@@ -33,13 +29,14 @@
     <file path="/index.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386087937616" ignored="false" />
     <file path="/default.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385130407076" ignored="false" />
     <file path="/common.css" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385160940306" ignored="false" />
-    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386344474282" ignored="false" />
+    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386700980107" ignored="false" />
     <file path="/app.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385590284175" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/SVGEditService.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386105600689" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/5-directives/ColorPickerDirective.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110516943" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/4-controllers/ColorPickerController.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110507704" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/test/spec/controllers/ColorPickerControllerSpec.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386168419749" ignored="false" />
     <file path="/ColorPickerControllerSpec.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110979845" ignored="false" />
+    <file path="/jspdf.plugin.svgToPdf.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386700512841" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +100,19 @@
       <file leaf-file-name="foot.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/includes/foot.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="90" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+            <state line="28" column="71" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,28 +120,74 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="50" selection-start="1111" selection-end="1111" vertical-scroll-proportion="-21.0">
+            <state line="39" column="50" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="78" selection-start="398" selection-end="398" vertical-scroll-proportion="0.23943663">
+            <state line="24" column="72" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jspdf.plugin.svgToPdf.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jspdf.plugin.svgToPdf.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.svgToPdf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0">
+            <state line="188" column="145" selection-start="7584" selection-end="7584" vertical-scroll-proportion="0.16848485">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#3851#22829#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.plugin.addimage.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.addimage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="26" selection-start="1273" selection-end="1294" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1532#3212#0" expanded="false" />
+                <element signature="e#3282#4352#0" expanded="false" />
+                <element signature="e#4389#4517#0" expanded="false" />
+                <element signature="e#4556#4773#0" expanded="false" />
+                <element signature="e#4835#7205#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.plugin.total_pages.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.total_pages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="8" selection-start="1368" selection-end="1376" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.plugin.cell.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.cell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#2020#2058#0" expanded="false" />
+                <element signature="e#2109#2861#0" expanded="false" />
+                <element signature="e#2903#3038#0" expanded="false" />
+                <element signature="e#3083#3206#0" expanded="false" />
+                <element signature="e#3267#4942#0" expanded="false" />
+                <element signature="e#4949#5094#0" expanded="false" />
+                <element signature="e#5182#5301#0" expanded="false" />
+                <element signature="e#5334#5592#0" expanded="false" />
+                <element signature="e#5599#5723#0" expanded="false" />
+                <element signature="e#5779#6237#0" expanded="false" />
+                <element signature="e#6834#10576#0" expanded="false" />
+                <element signature="e#10965#11390#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -295,28 +349,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileSaver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mean-SVG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linnovate-mean-390c9c9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -341,8 +373,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,11 +383,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/myyear" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -377,6 +409,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -407,19 +452,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -433,13 +465,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -461,6 +486,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -517,7 +549,11 @@
       <created>1385592958598</created>
       <updated>1385592958598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="now able to download Hello World pdf using jspdf.js in the browser.">
+      <created>1386345203268</created>
+      <updated>1386345203268</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -594,7 +630,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="addText and addCircle functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="now able to download Hello World pdf using jspdf.js in the browser." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -613,6 +649,7 @@
     <MESSAGE value="first layout attempt using bootstrap 2 and jade" />
     <MESSAGE value="basic layout is established here" />
     <MESSAGE value="addText and addCircle functions" />
+    <MESSAGE value="now able to download Hello World pdf using jspdf.js in the browser." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -637,21 +674,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/mean-logger/lib/mean-logger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="77" selection-start="67" selection-end="79" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/view-helpers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/underscore/underscore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="70" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" />
@@ -659,25 +681,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/doc/symbols/src/jspdf.js.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3837638">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3837638" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="82" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.34859154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="59" column="82" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.34859154" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/index.html">
@@ -689,9 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/libs/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/libs/Blob.js/Blob.js">
@@ -703,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="50" selection-start="1111" selection-end="1111" vertical-scroll-proportion="-21.0">
+        <state line="39" column="50" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -722,27 +729,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/foot.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="90" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+        <state line="28" column="71" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.svgToPdf.js">
+    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.cell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2020#2058#0" expanded="false" />
+            <element signature="e#2109#2861#0" expanded="false" />
+            <element signature="e#2903#3038#0" expanded="false" />
+            <element signature="e#3083#3206#0" expanded="false" />
+            <element signature="e#3267#4942#0" expanded="false" />
+            <element signature="e#4949#5094#0" expanded="false" />
+            <element signature="e#5182#5301#0" expanded="false" />
+            <element signature="e#5334#5592#0" expanded="false" />
+            <element signature="e#5599#5723#0" expanded="false" />
+            <element signature="e#5779#6237#0" expanded="false" />
+            <element signature="e#6834#10576#0" expanded="false" />
+            <element signature="e#10965#11390#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.total_pages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="1368" selection-end="1376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.addimage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="26" selection-start="1273" selection-end="1294" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#3851#22829#0" expanded="false" />
+            <element signature="e#1532#3212#0" expanded="false" />
+            <element signature="e#3282#4352#0" expanded="false" />
+            <element signature="e#4389#4517#0" expanded="false" />
+            <element signature="e#4556#4773#0" expanded="false" />
+            <element signature="e#4835#7205#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="78" selection-start="398" selection-end="398" vertical-scroll-proportion="0.23943663">
+        <state line="24" column="72" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.svgToPdf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="145" selection-start="7584" selection-end="7584" vertical-scroll-proportion="0.16848485">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

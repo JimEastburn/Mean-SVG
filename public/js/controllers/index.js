@@ -56,7 +56,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 //        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove(),topRightOnStart(),topRightOnEnd());
 //        var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove(),bottomRightOnStart(),bottomRightOnEnd());
 //        var bottomLeft = s.rect(90, 300, 10, 10).drag(bottomLeftOnMove(),bottomLeftOnStart(),bottomLeftOnEnd());
-        var bigSquareWidth = bigSquare.node.width.baseVal.value;
+        var bigSquareWidth = bigSquare.node.x.baseVal.value;
         var bigSquareHeight = bigSquare.node.height.baseVal.value;
 
         var topLeft = s.rect(90, 90, 10, 10).drag();
@@ -85,9 +85,15 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             console.log("y", y);
             console.log("dx",dx);
             console.log("dy",dy);
+            console.log("bigSquareWidth",bigSquareWidth);
+            console.log("bigSquareHeight",bigSquareHeight);
+            console.log("bigSquareWidth + dx",bigSquareWidth + dx);
+            console.log("bigSquareHeight + dy",bigSquareHeight + dy);
+            console.log("e.offsetX",e.offsetX);
+            console.log("e.offsetY",e.offsetY);
             console.log("e",e);
 
-            bigSquare.animate({width: bigSquareWidth + dx, height: bigSquareHeight + dy}, 1);
+            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value, height: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
             bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
 
 

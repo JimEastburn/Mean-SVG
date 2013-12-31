@@ -56,6 +56,8 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 //        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove(),topRightOnStart(),topRightOnEnd());
 //        var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove(),bottomRightOnStart(),bottomRightOnEnd());
 //        var bottomLeft = s.rect(90, 300, 10, 10).drag(bottomLeftOnMove(),bottomLeftOnStart(),bottomLeftOnEnd());
+        var bigSquareWidth = bigSquare.node.width.baseVal.value;
+        var bigSquareHeight = bigSquare.node.height.baseVal.value;
 
         var topLeft = s.rect(90, 90, 10, 10).drag();
         var topRight = s.rect(300, 90, 10, 10).drag();
@@ -76,20 +78,30 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             var c = x;
             var d = y;
             var evt = e;
-            var bigSquareWidth = bigSquare.width;
-            bigSquare.animate({width: 400, height:400}, 1);
+
+
+            console.log("bigSquare", bigSquare);
+            console.log("x", x);
+            console.log("y", y);
+            console.log("dx",dx);
+            console.log("dy",dy);
+            console.log("e",e);
+
+            bigSquare.animate({width: bigSquareWidth + dx, height: bigSquareHeight + dy}, 1);
+            bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
+
 
 
         };
         var bottomRightOnStart = function(x, y, e){
-            var c = x;
-            var d = y;
-            var evt = e;
+//            var c = x;
+//            var d = y;
+//            var evt = e;
 
         };
         var bottomRightOnEnd = function(e){
 
-            var evt = e;
+//            var evt = e;
 
         };
 

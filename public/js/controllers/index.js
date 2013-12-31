@@ -60,7 +60,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         var bigSquareHeight = bigSquare.node.height.baseVal.value;
 
         var topLeft = s.rect(90, 90, 10, 10).drag();
-        var topRight = s.rect(300, 90, 10, 10).drag();
+        //var topRight = s.rect(300, 90, 10, 10).drag();
 
         var bottomLeft = s.rect(90, 300, 10, 10).drag();
 
@@ -95,6 +95,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 
             bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value, height: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
             bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
+            topRight.animate({x: e.offsetX - bigSquare.node.x.baseVal.value, y: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
 
 
 
@@ -112,6 +113,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         };
 
         var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove,bottomRightOnStart,bottomRightOnEnd);
+        var topRight = s.rect(300, 90, 10, 10);
 //        var topLeftOnMove = function(){
 //
 //        };

@@ -49,21 +49,11 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         });
     };
 
-    $scope.addSquare = function(){
+    $scope.addDropTarget = function(){
         var s = Snap("#svg");
         var bigSquare = s.rect(100, 100, 200, 200);
-//        var topLeft = s.rect(90, 90, 10, 10).drag(topLeftOnMove(),topLeftOnStart(),topLeftOnEnd());
-//        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove(),topRightOnStart(),topRightOnEnd());
-//        var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove(),bottomRightOnStart(),bottomRightOnEnd());
-//        var bottomLeft = s.rect(90, 300, 10, 10).drag(bottomLeftOnMove(),bottomLeftOnStart(),bottomLeftOnEnd());
-        var bigSquareWidth = bigSquare.node.x.baseVal.value;
-        var bigSquareHeight = bigSquare.node.height.baseVal.value;
-
-        var topLeft = s.rect(90, 90, 10, 10).drag();
-        //var topRight = s.rect(300, 90, 10, 10).drag();
-
-        var bottomLeft = s.rect(90, 300, 10, 10).drag();
-
+//        var topLeft = s.rect(90, 90, 10, 10).drag(topLeftOnMove,topLeftOnStart,topLeftOnEnd);
+//        var bottomLeft = s.rect(90, 300, 10, 10).drag(bottomLeftOnMove,bottomLeftOnStart,bottomLeftOnEnd);
         //var dropTarget = s.group(bigSquare, topLeft, topRight, bottomRight, bottomLeft);
 
         bigSquare.attr({
@@ -73,47 +63,36 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         });
 
         var bottomRightOnMove = function(dx, dy, x, y, e){
-            var a = dx;
-            var b = dy;
-            var c = x;
-            var d = y;
-            var evt = e;
-
-
-            console.log("bigSquare", bigSquare);
-            console.log("x", x);
-            console.log("y", y);
-            console.log("dx",dx);
-            console.log("dy",dy);
-            console.log("bigSquareWidth",bigSquareWidth);
-            console.log("bigSquareHeight",bigSquareHeight);
-            console.log("bigSquareWidth + dx",bigSquareWidth + dx);
-            console.log("bigSquareHeight + dy",bigSquareHeight + dy);
-            console.log("e.offsetX",e.offsetX);
-            console.log("e.offsetY",e.offsetY);
-            console.log("e",e);
-
             bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value, height: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
             bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
-            topRight.animate({x: e.offsetX - bigSquare.node.x.baseVal.value, y: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
-
-
-
+            topRight.animate({ x:e.offsetX}, 1);
+            bottomLeft.animate({ y:e.offsetY}, 1);
         };
         var bottomRightOnStart = function(x, y, e){
-//            var c = x;
-//            var d = y;
-//            var evt = e;
-
         };
         var bottomRightOnEnd = function(e){
+        };
 
-//            var evt = e;
+        var topRightOnMove = function(dx, dy, x, y, e){
+            bigSquare.animate({width: e.offsetX , height: e.offsetY }, 1);
+            topRight.animate({ x: e.offsetX, y: e.offsetY}, 1);
+            bottomRight.animate({x: e.offsetX}, 1);
+            topLeft.animate({y: e.offsetY}, 1);
+
+
+        };
+        var topRightOnStart = function(){
+
+        };
+        var topRightOnEnd = function(){
 
         };
 
         var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove,bottomRightOnStart,bottomRightOnEnd);
-        var topRight = s.rect(300, 90, 10, 10);
+        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove,topRightOnStart,topRightOnEnd);
+        var bottomLeft = s.rect(90, 300, 10, 10);
+        var topLeft = s.rect(90, 90, 10, 10);
+
 //        var topLeftOnMove = function(){
 //
 //        };
@@ -123,15 +102,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 //        var topLeftOnEnd = function(){
 //
 //        };
-//        var topRightOnMove = function(){
 //
-//        };
-//        var topRightOnStart = function(){
-//
-//        };
-//        var topRightOnEnd = function(){
-//
-//        };
 //
 //        var bottomLeftOnMove = function(){
 //
@@ -146,5 +117,16 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 
     };
 
-
+//    console.log("bigSquare", bigSquare);
+//    console.log("x", x);
+//    console.log("y", y);
+//    console.log("dx",dx);
+//    console.log("dy",dy);
+//    console.log("bigSquareWidth",bigSquareWidth);
+//    console.log("bigSquareHeight",bigSquareHeight);
+//    console.log("bigSquareWidth + dx",bigSquareWidth + dx);
+//    console.log("bigSquareHeight + dy",bigSquareHeight + dy);
+//    console.log("e.offsetX",e.offsetX);
+//    console.log("e.offsetY",e.offsetY);
+//    console.log("e",e);
 }]);

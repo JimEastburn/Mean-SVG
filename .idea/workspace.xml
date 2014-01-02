@@ -8,8 +8,8 @@
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388527340712" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388526793872" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388674196540" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388527409970" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386794053774" ignored="false" />
     <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386699770924" ignored="false" />
@@ -26,10 +26,10 @@
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/components/svg-edit-2.6-unmodified/svg-editor.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385138747953" ignored="false" />
     <file path="/svg-editor.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385068712235" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/4-controllers/FormatPaletteCtrl.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385138747953" ignored="false" />
-    <file path="/index.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388412716853" ignored="false" />
+    <file path="/index.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388672476799" ignored="false" />
     <file path="/default.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385130407076" ignored="false" />
     <file path="/common.css" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385160940306" ignored="false" />
-    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388527066144" ignored="false" />
+    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388672720716" ignored="false" />
     <file path="/app.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385590284175" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/SVGEditService.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386105600689" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/5-directives/ColorPickerDirective.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110516943" ignored="false" />
@@ -118,7 +118,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="137" selection-start="271" selection-end="674" vertical-scroll-proportion="-4.576923">
+            <state line="8" column="133" selection-start="811" selection-end="811" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
@@ -127,8 +127,13 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="88" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.3">
-              <folding />
+            <state line="76" column="90" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.46117648">
+              <folding>
+                <element signature="e#2576#2587#0" expanded="false" />
+                <element signature="e#2631#2642#0" expanded="false" />
+                <element signature="e#2993#3005#0" expanded="false" />
+                <element signature="e#3045#3057#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -478,7 +483,11 @@
       <created>1388526799982</created>
       <updated>1388526799982</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="animate right handle drag on square">
+      <created>1388527417343</created>
+      <updated>1388527417343</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -681,15 +690,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="137" selection-start="271" selection-end="674" vertical-scroll-proportion="-4.576923">
+        <state line="8" column="133" selection-start="811" selection-end="811" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="88" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.3">
-          <folding />
+        <state line="76" column="90" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.46117648">
+          <folding>
+            <element signature="e#2576#2587#0" expanded="false" />
+            <element signature="e#2631#2642#0" expanded="false" />
+            <element signature="e#2993#3005#0" expanded="false" />
+            <element signature="e#3045#3057#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

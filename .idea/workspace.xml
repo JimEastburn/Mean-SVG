@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e183f6-2e9b-4940-af2d-1df46b727512" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/index.html" afterPath="$PROJECT_DIR$/public/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/index.js" afterPath="$PROJECT_DIR$/public/js/controllers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388674196540" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388527409970" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388789986221" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388788350624" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386794053774" ignored="false" />
     <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386699770924" ignored="false" />
@@ -29,7 +28,7 @@
     <file path="/index.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388672476799" ignored="false" />
     <file path="/default.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385130407076" ignored="false" />
     <file path="/common.css" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385160940306" ignored="false" />
-    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388672720716" ignored="false" />
+    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388789894192" ignored="false" />
     <file path="/app.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385590284175" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/SVGEditService.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386105600689" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/5-directives/ColorPickerDirective.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110516943" ignored="false" />
@@ -51,6 +50,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -87,7 +87,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -118,7 +117,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="133" selection-start="811" selection-end="811" vertical-scroll-proportion="-5.230769">
+            <state line="8" column="133" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,12 +126,12 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="90" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.46117648">
+            <state line="60" column="84" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.14">
               <folding>
                 <element signature="e#2576#2587#0" expanded="false" />
                 <element signature="e#2631#2642#0" expanded="false" />
-                <element signature="e#2993#3005#0" expanded="false" />
-                <element signature="e#3045#3057#0" expanded="false" />
+                <element signature="e#3272#3284#0" expanded="false" />
+                <element signature="e#3324#3336#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -203,7 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,7 +287,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,7 +486,11 @@
       <created>1388527417343</created>
       <updated>1388527417343</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="animated bottom right handle drag on square - finished">
+      <created>1388674362742</created>
+      <updated>1388674362742</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -506,7 +509,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -519,6 +521,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43977273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -564,7 +567,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="animate right handle drag on square" />
+    <option name="LAST_COMMIT_MESSAGE" value="animated bottom right handle drag on square - finished" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -586,6 +589,7 @@
     <MESSAGE value="now able to download Hello World pdf using jspdf.js in the browser." />
     <MESSAGE value="tried to integrate svgToPdf plugin into jspdf api, may need to back out these changes" />
     <MESSAGE value="animate right handle drag on square" />
+    <MESSAGE value="animated bottom right handle drag on square - finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -654,9 +658,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/jsPDF-master/jspdf.plugin.from_html.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="557" column="58" selection-start="16736" selection-end="16780" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="557" column="58" selection-start="16736" selection-end="16780" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/includes/foot.jade">
@@ -690,19 +692,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="133" selection-start="811" selection-end="811" vertical-scroll-proportion="-5.230769">
+        <state line="8" column="133" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="90" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.46117648">
+        <state line="60" column="84" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.14">
           <folding>
             <element signature="e#2576#2587#0" expanded="false" />
             <element signature="e#2631#2642#0" expanded="false" />
-            <element signature="e#2993#3005#0" expanded="false" />
-            <element signature="e#3045#3057#0" expanded="false" />
+            <element signature="e#3272#3284#0" expanded="false" />
+            <element signature="e#3324#3336#0" expanded="false" />
           </folding>
         </state>
       </provider>

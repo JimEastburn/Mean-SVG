@@ -74,7 +74,14 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         };
 
         var topRightOnMove = function(dx, dy, x, y, e){
-            bigSquare.animate({width: e.offsetX , height: e.offsetY }, 1);
+            console.log("x", x);
+    console.log("y", y);
+    console.log("dx",dx);
+    console.log("dy",dy);
+    console.log("e.offsetX",e.offsetX);
+    console.log("e.offsetY",e.offsetY);
+    console.log("e",e);
+            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value ,   y: e.offsetY + topRight.node.width.baseVal.value}, 1);
             topRight.animate({ x: e.offsetX, y: e.offsetY}, 1);
             bottomRight.animate({x: e.offsetX}, 1);
             topLeft.animate({y: e.offsetY}, 1);

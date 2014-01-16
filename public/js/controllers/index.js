@@ -50,11 +50,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
     };
 
     $scope.addDropTarget = function(){
+
+
+
+
+        //var paper = Raphael("paper", 500, 500);
         var s = Snap("#svg");
         var bigSquare = s.rect(100, 100, 200, 200);
-//        var topLeft = s.rect(90, 90, 10, 10).drag(topLeftOnMove,topLeftOnStart,topLeftOnEnd);
-//        var bottomLeft = s.rect(90, 300, 10, 10).drag(bottomLeftOnMove,bottomLeftOnStart,bottomLeftOnEnd);
-        //var dropTarget = s.group(bigSquare, topLeft, topRight, bottomRight, bottomLeft);
 
         bigSquare.attr({
             fill: "#fff",
@@ -62,67 +64,184 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             strokeWidth: 5
         });
 
-        var bottomRightOnMove = function(dx, dy, x, y, e){
-            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value, height: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
-            bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
-            topRight.animate({ x:e.offsetX}, 1);
-            bottomLeft.animate({ y:e.offsetY}, 1);
-        };
-        var bottomRightOnStart = function(x, y, e){
-        };
-        var bottomRightOnEnd = function(e){
-        };
+        var dragStart = function() {
 
-        var topRightOnMove = function(dx, dy, x, y, e){
-            console.log("x", x);
-    console.log("y", y);
-    console.log("dx",dx);
-    console.log("dy",dy);
-    console.log("e.offsetX",e.offsetX);
-    console.log("e.offsetY",e.offsetY);
-    console.log("e",e);
-            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value ,   y: e.offsetY + topRight.node.width.baseVal.value}, 1);
-            topRight.animate({ x: e.offsetX, y: e.offsetY}, 1);
-            bottomRight.animate({x: e.offsetX}, 1);
-            topLeft.animate({y: e.offsetY}, 1);
+            // Save some starting values
+            this.ox = this.attr('x');
+            this.oy = this.attr('y');
+            this.ow = this.attr('width');
+            this.oh = this.attr('height');
 
-
-        };
-        var topRightOnStart = function(){
-
-        };
-        var topRightOnEnd = function(){
-
+            this.dragging = true;
         };
 
-        var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove,bottomRightOnStart,bottomRightOnEnd);
-        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove,topRightOnStart,topRightOnEnd);
-        var bottomLeft = s.rect(90, 300, 10, 10);
-        var topLeft = s.rect(90, 90, 10, 10);
+        var dragMove = function(dx, dy, x, y, e) {
 
-//        var topLeftOnMove = function(){
-//
-//        };
-//        var topLeftOnStart = function(){
-//
-//        };
-//        var topLeftOnEnd = function(){
-//
-//        };
-//
-//
-//        var bottomLeftOnMove = function(){
-//
-//        };
-//        var bottomLeftOnStart = function(){
-//
-//        };
-//        var bottomLeftOnEnd = function(){
-//
-//        };
+            // Inspect cursor to determine which resize/move process to use
+            switch (this.attr('cursor')) {
+
+                case 'nw-resize' :
+                    this.attr({           //good
+                        x:  e.offsetX,
+                        y:  e.offsetY,
+                        width: this.ow - dx,
+                        height: this.oh - dy
+                    });
+                    break;
+
+                case 'ne-resize' :   //good
+                    this.attr({
+                        y: e.offsetY,
+                        width: e.offsetX - this.ox,
+                        height: this.oh - dy
+                    });
+                    break;
+
+                case 'se-resize' :  //good
+                    this.attr({
+                        width: e.offsetX - this.ox,
+                        height: e.offsetY - this.oy
+                    });
+                    break;
+
+                case 'sw-resize' :
+                    this.attr({       //good
+                        x: e.offsetX,
+                        width: this.ow - dx,
+                        height: e.offsetY - this.oy
+                    });
+                    break;
+
+                default :                               //good
+                    this.attr({
+                        x:  e.offsetX - (this.ow *.5) ,
+                        y:  e.offsetY - (this.oh *.5)
+                    });
+                    break;
+
+            }
+        };
+
+        var dragEnd = function() {
+            this.dragging = false;
+        };
+
+        var changeCursor = function(e, mouseX, mouseY) {
+
+            // Don't change cursor during a drag operation
+            if (this.dragging === true) {
+                return;
+            }
+
+            // X,Y Coordinates relative to shape's orgin
+            var relativeX = mouseX - $('#svg').offset().left - this.attr('x');
+            var relativeY = mouseY - $('#svg').offset().top - this.attr('y');
+
+            var shapeWidth = this.attr('width');
+            var shapeHeight = this.attr('height');
+
+            var resizeBorder = 10;
+
+            // Change cursor
+            if (relativeX < resizeBorder && relativeY < resizeBorder) {
+                this.attr('cursor', 'nw-resize');
+            } else if (relativeX > shapeWidth-resizeBorder && relativeY < resizeBorder) {
+                this.attr('cursor', 'ne-resize');
+            } else if (relativeX > shapeWidth-resizeBorder && relativeY > shapeHeight-resizeBorder) {
+                this.attr('cursor', 'se-resize');
+            } else if (relativeX < resizeBorder && relativeY > shapeHeight-resizeBorder) {
+                this.attr('cursor', 'sw-resize');
+            } else {
+                this.attr('cursor', 'move');
+            }
+        };
 
 
-    };
+
+
+        // Attach "Mouse Over" handler to rectangle
+        bigSquare.mousemove(changeCursor);
+
+        // Attach "Drag" handlers to rectangle
+        bigSquare.drag(dragMove, dragStart, dragEnd);
+    }
+
+//    $scope.addDropTarget = function(){
+//        var s = Snap("#svg");
+//        var bigSquare = s.rect(100, 100, 200, 200);
+////
+//        bigSquare.attr({
+//            fill: "#fff",
+//            stroke: "#000",
+//            strokeWidth: 5
+//        });
+//
+//        var topRightX = 0;
+//        var topRightY = 0;
+//        var topRightE = "";
+//
+//        var bigSquareStartX = 0;
+//        var bigSquareStartY = 0;
+//        var bigSquareStartWidth = 0;
+//        var bigSquareStartHeight = 0;
+//
+//
+//        var bottomRightOnMove = function(dx, dy, x, y, e){
+//            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value, height: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
+//            bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
+//            topRight.animate({ x:e.offsetX}, 1);
+//            bottomLeft.animate({ y:e.offsetY}, 1);
+//        };
+//        var bottomRightOnStart = function(x, y, e){
+//        };
+//        var bottomRightOnEnd = function(e){
+//        };
+//
+//        var topRightOnMove = function(dx, dy, x, y, e){
+//            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value , height: bigSquareStartHeight - dy,  y: e.offsetY + topRight.node.width.baseVal.value}, 1);
+//            topRight.animate({ x: e.offsetX, y: e.offsetY}, 1);
+//            bottomRight.animate({x: e.offsetX}, 1);
+//            topLeft.animate({y: e.offsetY}, 1);
+//        };
+//        var topRightOnStart = function(x, y, e){
+//            bigSquareStartX = bigSquare.node.x.baseVal.value;
+//            bigSquareStartY = bigSquare.node.y.baseVal.value;
+//            bigSquareStartWidth = bigSquare.node.width.baseVal.value;
+//            bigSquareStartHeight = bigSquare.node.heigh.baseVal.value;
+//        };
+//
+//        var topRightOnEnd = function(){
+//
+//        };
+//
+//        var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove,bottomRightOnStart,bottomRightOnEnd);
+//        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove,topRightOnStart,topRightOnEnd);
+//        var bottomLeft = s.rect(90, 300, 10, 10);
+//        var topLeft = s.rect(90, 90, 10, 10);
+//
+////        var topLeftOnMove = function(){
+////
+////        };
+////        var topLeftOnStart = function(){
+////
+////        };
+////        var topLeftOnEnd = function(){
+////
+////        };
+////
+////
+////        var bottomLeftOnMove = function(){
+////
+////        };
+////        var bottomLeftOnStart = function(){
+////
+////        };
+////        var bottomLeftOnEnd = function(){
+////
+////        };
+//
+//
+//    };
 
 //    console.log("bigSquare", bigSquare);
 //    console.log("x", x);
@@ -133,6 +252,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 //    console.log("bigSquareHeight",bigSquareHeight);
 //    console.log("bigSquareWidth + dx",bigSquareWidth + dx);
 //    console.log("bigSquareHeight + dy",bigSquareHeight + dy);
+//    console.log("e.offsetX",e.offsetX);
+//    console.log("e.offsetY",e.offsetY);
+//    console.log("e",e);
+//    console.log("x", x);
+//    console.log("y", y);
+//    console.log("dx",dx);
+//    console.log("dy",dy);
 //    console.log("e.offsetX",e.offsetX);
 //    console.log("e.offsetY",e.offsetY);
 //    console.log("e",e);

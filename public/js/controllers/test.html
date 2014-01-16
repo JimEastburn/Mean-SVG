@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head>
+    <title>untitled</title>
+
+    <style type="text/css" media="screen">
+        .handle {
+            position: absolute;
+            border: 0.1em solid black;
+            width: 1em;
+            height: 1em;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        function draggablePolygon(polygon) {
+            var points = polygon.points;
+            var svgRoot = $(polygon).closest("svg");
+
+            for (var i = 0; i < points.numberOfItems; i++) {
+                (function (i) { // close over variables for drag call back
+                    var point = points.getItem(i);
+
+                    var handle = document.createElement("div");
+                    handle.className = "handle";
+                    document.body.appendChild(handle);
+
+                    var base = svgRoot.position();
+                    // center handles over polygon
+                    var cs = window.getComputedStyle(handle, null);
+                    base.left -= (parseInt(cs.width) + parseInt(cs.borderLeftWidth) + parseInt(cs.borderRightWidth))/2;
+                    base.top -= (parseInt(cs.height) + parseInt(cs.borderTopWidth) + parseInt(cs.borderBottomWidth))/2;
+
+                    handle.style.left = base.left + point.x + "px";
+                    handle.style.top = base.top + point.y + "px";
+
+                    $(handle).draggable({
+                        drag: function (event) {
+                            setTimeout(function () { // jQuery apparently calls this *before* setting position, so defer
+                                point.x = parseInt(handle.style.left) - base.left;
+                                point.y = parseInt(handle.style.top) - base.top;
+                            },0);
+                        }
+                    });
+                }(i));
+            }
+        }
+    </script>
+</head><body>
+<p>
+    (Offset to test)
+    <svg id="theSVG" width="500" height="500" style="border: 2px inset #CCC;">
+        <polygon id="x" points="200,200 100,100 100,1" fill="green" />
+        <polygon id="y" points="200,200 100,100 1,100" fill="red" />
+    </svg>
+</p>
+<script type="text/javascript">
+    draggablePolygon(document.getElementById("x"));
+    draggablePolygon(document.getElementById("y"));
+</script>
+
+</body></html>

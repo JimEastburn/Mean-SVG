@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19e183f6-2e9b-4940-af2d-1df46b727512" name="Default" comment="animated bottom right handle drag on square - finished">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+    <list default="true" id="19e183f6-2e9b-4940-af2d-1df46b727512" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/index.js" afterPath="$PROJECT_DIR$/public/js/controllers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1389882715246" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1389878071095" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390246492494" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390246240426" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386794053774" ignored="false" />
     <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386699770924" ignored="false" />
@@ -101,7 +99,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="1034" selection-end="1036" vertical-scroll-proportion="-10.461538">
+            <state line="16" column="23" selection-start="1034" selection-end="1036" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,14 +108,13 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="78" selection-start="3009" selection-end="3009" vertical-scroll-proportion="0.5176471">
+            <state line="168" column="65" selection-start="5410" selection-end="5410" vertical-scroll-proportion="0.44">
               <folding>
                 <element signature="e#173#258#0" expanded="false" />
-                <element signature="e#294#1360#0" expanded="false" />
-                <element signature="e#1396#1611#0" expanded="false" />
-                <element signature="e#1944#2193#0" expanded="false" />
-                <element signature="e#3749#3795#0" expanded="false" />
-                <element signature="e#7811#7853#0" expanded="false" />
+                <element signature="e#294#1361#0" expanded="false" />
+                <element signature="e#1397#1612#0" expanded="false" />
+                <element signature="e#2065#2314#0" expanded="false" />
+                <element signature="e#8265#8307#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -190,7 +187,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,29 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mean-SVG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linnovate-mean-390c9c9" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,7 +308,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,12 +317,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/myyear" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -369,19 +344,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -412,6 +374,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -425,6 +400,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -446,13 +428,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -541,7 +516,11 @@
       <created>1388790013683</created>
       <updated>1388790013683</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="changed to new implementation of drag and resize for the rectangle - all working">
+      <created>1389882815175</created>
+      <updated>1389882815175</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -618,7 +597,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="animated bottom right handle drag on square - finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to new implementation of drag and resize for the rectangle - all working" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -641,6 +620,7 @@
     <MESSAGE value="tried to integrate svgToPdf plugin into jspdf api, may need to back out these changes" />
     <MESSAGE value="animate right handle drag on square" />
     <MESSAGE value="animated bottom right handle drag on square - finished" />
+    <MESSAGE value="changed to new implementation of drag and resize for the rectangle - all working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -670,11 +650,10 @@
         <state line="83" column="111" selection-start="2744" selection-end="2744" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#173#258#0" expanded="false" />
-            <element signature="e#294#1360#0" expanded="false" />
-            <element signature="e#1396#1611#0" expanded="false" />
-            <element signature="e#1944#2193#0" expanded="false" />
-            <element signature="e#3749#3795#0" expanded="false" />
-            <element signature="e#7811#7853#0" expanded="false" />
+            <element signature="e#294#1361#0" expanded="false" />
+            <element signature="e#1397#1612#0" expanded="false" />
+            <element signature="e#2065#2314#0" expanded="false" />
+            <element signature="e#8265#8307#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,21 +731,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="1034" selection-end="1036" vertical-scroll-proportion="-10.461538">
+        <state line="16" column="23" selection-start="1034" selection-end="1036" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="78" selection-start="3009" selection-end="3009" vertical-scroll-proportion="0.5176471">
+        <state line="168" column="65" selection-start="5410" selection-end="5410" vertical-scroll-proportion="0.44">
           <folding>
             <element signature="e#173#258#0" expanded="false" />
-            <element signature="e#294#1360#0" expanded="false" />
-            <element signature="e#1396#1611#0" expanded="false" />
-            <element signature="e#1944#2193#0" expanded="false" />
-            <element signature="e#3749#3795#0" expanded="false" />
-            <element signature="e#7811#7853#0" expanded="false" />
+            <element signature="e#294#1361#0" expanded="false" />
+            <element signature="e#1397#1612#0" expanded="false" />
+            <element signature="e#2065#2314#0" expanded="false" />
+            <element signature="e#8265#8307#0" expanded="false" />
           </folding>
         </state>
       </provider>

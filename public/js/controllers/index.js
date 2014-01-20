@@ -13,7 +13,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 //        doc.save('Test.pdf');
 
 
-       // https://github.com/CBiX/svgToPdf.js
+        // https://github.com/CBiX/svgToPdf.js
 //        // I recommend to keep the svg visible as a preview
 //        var svg = $('#container > svg').get(0);
 //// you should set the format dynamically, write [width, height] instead of 'a4'
@@ -51,12 +51,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 
     $scope.addDropTarget = function(){
 
-
-
-
         //var paper = Raphael("paper", 500, 500);
         var s = Snap("#svg");
         var bigSquare = s.rect(100, 100, 200, 200);
+
+        var image = s.image("/../img/Chrysanthemum.jpg", 100, 100, 200, 200);
+
+        // s.g(bigSquare, image);
 
         bigSquare.attr({
             fill: "#fff",
@@ -64,7 +65,9 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             strokeWidth: 5
         });
 
-        var dragStart = function() {
+
+
+        var dragStart = function(x, y, e) {
 
             // Save some starting values
             this.ox = this.attr('x');
@@ -157,13 +160,21 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         };
 
 
-
+        // f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
+        // g = f.select("g");
+        // s.append(g);
+        // // Making croc draggable. Go ahead drag it around!
+        // g.drag();
 
         // Attach "Mouse Over" handler to rectangle
         bigSquare.mousemove(changeCursor);
+        image.mousemove(changeCursor);
 
         // Attach "Drag" handlers to rectangle
         bigSquare.drag(dragMove, dragStart, dragEnd);
+        image.drag(dragMove, dragStart, dragEnd);
+
+        //bigSquare.add(image);
     }
 
 //    $scope.addDropTarget = function(){

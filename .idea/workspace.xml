@@ -7,8 +7,8 @@
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390246492494" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390246240426" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390864305589" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390862062222" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386794053774" ignored="false" />
     <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386699770924" ignored="false" />
@@ -28,7 +28,7 @@
     <file path="/index.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388672476799" ignored="false" />
     <file path="/default.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385130407076" ignored="false" />
     <file path="/common.css" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385160940306" ignored="false" />
-    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1389882652786" ignored="false" />
+    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1390863841949" ignored="false" />
     <file path="/app.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385590284175" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/SVGEditService.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386105600689" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/5-directives/ColorPickerDirective.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110516943" ignored="false" />
@@ -108,13 +108,11 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="65" selection-start="5410" selection-end="5410" vertical-scroll-proportion="0.44">
+            <state line="157" column="72" selection-start="5366" selection-end="5366" vertical-scroll-proportion="-0.19175258">
               <folding>
                 <element signature="e#173#258#0" expanded="false" />
                 <element signature="e#294#1361#0" expanded="false" />
                 <element signature="e#1397#1612#0" expanded="false" />
-                <element signature="e#2065#2314#0" expanded="false" />
-                <element signature="e#8265#8307#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -131,6 +129,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -158,8 +157,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="width" value="1618" />
+    <option name="height" value="1170" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -187,6 +186,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -308,7 +308,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -520,14 +519,18 @@
       <created>1389882815175</created>
       <updated>1389882815175</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added resize to image in the dropTarget">
+      <created>1390246832747</created>
+      <updated>1390246832747</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="1170" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22244489" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -545,7 +548,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21878335" sideWeight="0.5602273" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13384813" sideWeight="0.7775551" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -597,7 +600,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to new implementation of drag and resize for the rectangle - all working" />
+    <option name="LAST_COMMIT_MESSAGE" value="added resize to image in the dropTarget" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -621,6 +624,7 @@
     <MESSAGE value="animate right handle drag on square" />
     <MESSAGE value="animated bottom right handle drag on square - finished" />
     <MESSAGE value="changed to new implementation of drag and resize for the rectangle - all working" />
+    <MESSAGE value="added resize to image in the dropTarget" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -652,8 +656,6 @@
             <element signature="e#173#258#0" expanded="false" />
             <element signature="e#294#1361#0" expanded="false" />
             <element signature="e#1397#1612#0" expanded="false" />
-            <element signature="e#2065#2314#0" expanded="false" />
-            <element signature="e#8265#8307#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -705,9 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="87" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="21" column="87" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
@@ -738,13 +738,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="65" selection-start="5410" selection-end="5410" vertical-scroll-proportion="0.44">
+        <state line="157" column="72" selection-start="5366" selection-end="5366" vertical-scroll-proportion="-0.19175258">
           <folding>
             <element signature="e#173#258#0" expanded="false" />
             <element signature="e#294#1361#0" expanded="false" />
             <element signature="e#1397#1612#0" expanded="false" />
-            <element signature="e#2065#2314#0" expanded="false" />
-            <element signature="e#8265#8307#0" expanded="false" />
           </folding>
         </state>
       </provider>

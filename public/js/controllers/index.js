@@ -51,13 +51,16 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 
     $scope.addDropTarget = function(){
 
-        //var paper = Raphael("paper", 500, 500);
         var s = Snap("#svg");
         var bigSquare = s.rect(100, 100, 200, 200);
 
+
         var image = s.image("/../img/Chrysanthemum.jpg", 100, 100, 200, 200);
 
-        // s.g(bigSquare, image);
+        var topLeft = s.rect(90, 90, 10, 10);
+        var topRight = s.rect(300, 90, 10, 10);
+        var bottomRight = s.rect(300, 300, 10, 10);
+        var bottomLeft = s.rect(90, 300, 10, 10);
 
         bigSquare.attr({
             fill: "#fff",
@@ -65,15 +68,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             strokeWidth: 5
         });
 
-
-
         var dragStart = function(x, y, e) {
 
             // Save some starting values
-            this.ox = this.attr('x');
-            this.oy = this.attr('y');
-            this.ow = this.attr('width');
-            this.oh = this.attr('height');
+            this.ox = this[0].attr('x');
+            this.oy = this[0].attr('y');
+            this.ow = this[0].attr('width');
+            this.oh = this[0].attr('height');
 
             this.dragging = true;
         };
@@ -83,8 +84,15 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             // Inspect cursor to determine which resize/move process to use
             switch (this.attr('cursor')) {
 
-                case 'nw-resize' :
-                    this.attr({           //good
+                case 'nw-resize' :    //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                    this[0].attr({
+                        x:  e.offsetX,
+                        y:  e.offsetY,
+                        width: this.ow - dx,
+                        height: this.oh - dy
+                    });
+
+                    this[1].attr({
                         x:  e.offsetX,
                         y:  e.offsetY,
                         width: this.ow - dx,
@@ -92,33 +100,77 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                     });
                     break;
 
-                case 'ne-resize' :   //good
-                    this.attr({
+                case 'ne-resize' :    //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                    this[0].attr({
+                        y: e.offsetY,
+                        width: e.offsetX - this.ox,
+                        height: this.oh - dy
+                    });
+
+                    this[1].attr({
                         y: e.offsetY,
                         width: e.offsetX - this.ox,
                         height: this.oh - dy
                     });
                     break;
 
-                case 'se-resize' :  //good
-                    this.attr({
+                case 'se-resize' :   //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                    this[0].attr({
                         width: e.offsetX - this.ox,
                         height: e.offsetY - this.oy
                     });
+
+                    this[1].attr({
+                        width: e.offsetX - this.ox,
+                        height: e.offsetY - this.oy
+                    });
+
+
                     break;
 
-                case 'sw-resize' :
-                    this.attr({       //good
+                case 'sw-resize' :   //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                    this[0].attr({
+                        x: e.offsetX,
+                        width: this.ow - dx,
+                        height: e.offsetY - this.oy
+                    });
+
+                    this[1].attr({
                         x: e.offsetX,
                         width: this.ow - dx,
                         height: e.offsetY - this.oy
                     });
                     break;
 
-                default :                               //good
-                    this.attr({
+                default :             //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                    this[0].attr({//bigSquare
                         x:  e.offsetX - (this.ow *.5) ,
                         y:  e.offsetY - (this.oh *.5)
+                    });
+
+                    this[1].attr({//image
+                        x:  e.offsetX - (this.ow *.5) ,
+                        y:  e.offsetY - (this.oh *.5)
+                    });
+
+                    this[2].attr({//topLeft
+                        x:  e.offsetX - (this.ow *.5)-10 ,
+                        y:  e.offsetY - (this.oh *.5)-10
+                    });
+
+                    this[3].attr({//topRight
+                        x:  e.offsetX +(this.ow *.5) ,
+                        y:  e.offsetY - (this.oh *.5)-10
+                    });
+
+                    this[4].attr({//bottomRight
+                        x:  e.offsetX +(this.ow *.5) ,
+                        y:  e.offsetY + (this.oh *.5)
+                    });
+
+                    this[5].attr({//bottomLeft
+                        x:  e.offsetX -(this.ow *.5)-10 ,
+                        y:  e.offsetY + (this.oh *.5)
                     });
                     break;
 
@@ -137,11 +189,11 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             }
 
             // X,Y Coordinates relative to shape's orgin
-            var relativeX = mouseX - $('#svg').offset().left - this.attr('x');
-            var relativeY = mouseY - $('#svg').offset().top - this.attr('y');
+            var relativeX = mouseX - $('#svg').offset().left - this[0].attr('x');
+            var relativeY = mouseY - $('#svg').offset().top - this[0].attr('y');
 
-            var shapeWidth = this.attr('width');
-            var shapeHeight = this.attr('height');
+            var shapeWidth = this[0].attr('width');
+            var shapeHeight = this[0].attr('height');
 
             var resizeBorder = 10;
 
@@ -160,117 +212,9 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         };
 
 
-        // f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
-        // g = f.select("g");
-        // s.append(g);
-        // // Making croc draggable. Go ahead drag it around!
-        // g.drag();
+        var dropTargetGroup = s.group(bigSquare, image, topLeft, topRight, bottomRight, bottomLeft);
+        dropTargetGroup.mousemove(changeCursor);
+        dropTargetGroup.drag(dragMove, dragStart, dragEnd);
 
-        // Attach "Mouse Over" handler to rectangle
-        bigSquare.mousemove(changeCursor);
-        image.mousemove(changeCursor);
-
-        // Attach "Drag" handlers to rectangle
-        bigSquare.drag(dragMove, dragStart, dragEnd);
-        image.drag(dragMove, dragStart, dragEnd);
-
-        //bigSquare.add(image);
     }
-
-//    $scope.addDropTarget = function(){
-//        var s = Snap("#svg");
-//        var bigSquare = s.rect(100, 100, 200, 200);
-////
-//        bigSquare.attr({
-//            fill: "#fff",
-//            stroke: "#000",
-//            strokeWidth: 5
-//        });
-//
-//        var topRightX = 0;
-//        var topRightY = 0;
-//        var topRightE = "";
-//
-//        var bigSquareStartX = 0;
-//        var bigSquareStartY = 0;
-//        var bigSquareStartWidth = 0;
-//        var bigSquareStartHeight = 0;
-//
-//
-//        var bottomRightOnMove = function(dx, dy, x, y, e){
-//            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value, height: e.offsetY - bigSquare.node.y.baseVal.value}, 1);
-//            bottomRight.animate({x: e.offsetX, y: e.offsetY}, 1);
-//            topRight.animate({ x:e.offsetX}, 1);
-//            bottomLeft.animate({ y:e.offsetY}, 1);
-//        };
-//        var bottomRightOnStart = function(x, y, e){
-//        };
-//        var bottomRightOnEnd = function(e){
-//        };
-//
-//        var topRightOnMove = function(dx, dy, x, y, e){
-//            bigSquare.animate({width: e.offsetX - bigSquare.node.x.baseVal.value , height: bigSquareStartHeight - dy,  y: e.offsetY + topRight.node.width.baseVal.value}, 1);
-//            topRight.animate({ x: e.offsetX, y: e.offsetY}, 1);
-//            bottomRight.animate({x: e.offsetX}, 1);
-//            topLeft.animate({y: e.offsetY}, 1);
-//        };
-//        var topRightOnStart = function(x, y, e){
-//            bigSquareStartX = bigSquare.node.x.baseVal.value;
-//            bigSquareStartY = bigSquare.node.y.baseVal.value;
-//            bigSquareStartWidth = bigSquare.node.width.baseVal.value;
-//            bigSquareStartHeight = bigSquare.node.heigh.baseVal.value;
-//        };
-//
-//        var topRightOnEnd = function(){
-//
-//        };
-//
-//        var bottomRight = s.rect(300, 300, 10, 10).drag(bottomRightOnMove,bottomRightOnStart,bottomRightOnEnd);
-//        var topRight = s.rect(300, 90, 10, 10).drag(topRightOnMove,topRightOnStart,topRightOnEnd);
-//        var bottomLeft = s.rect(90, 300, 10, 10);
-//        var topLeft = s.rect(90, 90, 10, 10);
-//
-////        var topLeftOnMove = function(){
-////
-////        };
-////        var topLeftOnStart = function(){
-////
-////        };
-////        var topLeftOnEnd = function(){
-////
-////        };
-////
-////
-////        var bottomLeftOnMove = function(){
-////
-////        };
-////        var bottomLeftOnStart = function(){
-////
-////        };
-////        var bottomLeftOnEnd = function(){
-////
-////        };
-//
-//
-//    };
-
-//    console.log("bigSquare", bigSquare);
-//    console.log("x", x);
-//    console.log("y", y);
-//    console.log("dx",dx);
-//    console.log("dy",dy);
-//    console.log("bigSquareWidth",bigSquareWidth);
-//    console.log("bigSquareHeight",bigSquareHeight);
-//    console.log("bigSquareWidth + dx",bigSquareWidth + dx);
-//    console.log("bigSquareHeight + dy",bigSquareHeight + dy);
-//    console.log("e.offsetX",e.offsetX);
-//    console.log("e.offsetY",e.offsetY);
-//    console.log("e",e);
-//    console.log("x", x);
-//    console.log("y", y);
-//    console.log("dx",dx);
-//    console.log("dy",dy);
-//    console.log("e.offsetX",e.offsetX);
-//    console.log("e.offsetY",e.offsetY);
-//    console.log("e",e);
 }]);

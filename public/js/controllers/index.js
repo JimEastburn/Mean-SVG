@@ -98,6 +98,23 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         width: this.ow - dx,
                         height: this.oh - dy
                     });
+
+                    this[2].attr({//topLeft
+                        x:  e.offsetX -10,
+                        y:  e.offsetY - 10
+                    });
+
+                    this[3].attr({//topRight
+                        y:  e.offsetY -10
+                    });
+
+                    this[4].attr({//bottomRight
+                       //no change
+                    });
+
+                    this[5].attr({//bottomLeft
+                        x:  e.offsetX -10
+                    });
                     break;
 
                 case 'ne-resize' :    //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
@@ -112,6 +129,23 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         width: e.offsetX - this.ox,
                         height: this.oh - dy
                     });
+
+                    this[2].attr({//topLeft
+                        y:  e.offsetY -10
+                    });
+
+                    this[3].attr({//topRight
+                        x:  e.offsetX,
+                        y:  e.offsetY -10
+                    });
+
+                    this[4].attr({//bottomRight
+                        x:  e.offsetX
+                    });
+
+                    this[5].attr({//bottomLeft
+                        //no change
+                    });
                     break;
 
                 case 'se-resize' :   //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
@@ -123,6 +157,23 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                     this[1].attr({
                         width: e.offsetX - this.ox,
                         height: e.offsetY - this.oy
+                    });
+
+                    this[2].attr({//topLeft
+                        //no changes
+                    });
+
+                    this[3].attr({//topRight
+                        x:  e.offsetX
+                    });
+
+                    this[4].attr({//bottomRight
+                        x:  e.offsetX ,
+                        y:  e.offsetY
+                    });
+
+                    this[5].attr({//bottomLeft
+                        y:  e.offsetY
                     });
 
 

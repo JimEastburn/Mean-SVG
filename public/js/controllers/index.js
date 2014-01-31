@@ -75,14 +75,6 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             this.oy = this[0].attr('y');
             this.ow = this[0].attr('width');
             this.oh = this[0].attr('height');
-            this.nwX = this[2].attr('x');
-            this.nwY = this[2].attr('y');
-            this.neX = this[3].attr('x');
-            this.neY = this[3].attr('y');
-            this.seX = this[4].attr('x');
-            this.seY = this[4].attr('y');
-            this.swX = this[5].attr('x');
-            this.swY = this[5].attr('y');
 
             this.dragging = true;
         };
@@ -143,20 +135,24 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                     });
 
                     this[2].attr({//topLeft nw
+                        x:  e.offsetX - this.ow - dx ,
+                        y:  e.offsetY - 10
+                    });
+
+                    this[3].attr({//topRight  ne  works
+                        x:  e.offsetX ,
+                        y:  e.offsetY - 10
 
                     });
 
-                    this[3].attr({//topRight  ne
-
-
-                    });
-
-                    this[4].attr({//bottomRight   se
-
+                    this[4].attr({//bottomRight   se  works
+                        x:  e.offsetX,
+                        y:  (e.offsetY) + (this.oh - dy)
                     });
 
                     this[5].attr({//bottomLeft  sw
-
+                        x:  e.offsetX - this.ow - dx,
+                        y:  (e.offsetY) + (this.oh - dy)
                     });
                     break;
 

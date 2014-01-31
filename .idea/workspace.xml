@@ -7,8 +7,8 @@
     </list>
     <ignored path="Mean-SVG.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1391178228823" ignored="false" />
-    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1391175802680" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/myyear/atlassian-ide-plugin.xml" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1391209087198" ignored="false" />
+    <file path="/Dummy.txt" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1391207551264" ignored="false" />
     <file path="/bower.json" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1384985304775" ignored="false" />
     <file path="/*.regexp" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386794053774" ignored="false" />
     <file path="/foot.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386699770924" ignored="false" />
@@ -28,7 +28,7 @@
     <file path="/index.html" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1388672476799" ignored="false" />
     <file path="/default.jade" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385130407076" ignored="false" />
     <file path="/common.css" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385160940306" ignored="false" />
-    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1391177914851" ignored="false" />
+    <file path="/index.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1391208687815" ignored="false" />
     <file path="/app.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1385590284175" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/3-resources/SVGEditService.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386105600689" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/myyear/sparta-ui/app/scripts/5-directives/ColorPickerDirective.js" changelist="19e183f6-2e9b-4940-af2d-1df46b727512" time="1386110516943" ignored="false" />
@@ -108,11 +108,12 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="87" selection-start="4749" selection-end="4749" vertical-scroll-proportion="0.46">
+            <state line="139" column="60" selection-start="4629" selection-end="4629" vertical-scroll-proportion="0.44941175">
               <folding>
                 <element signature="e#173#258#0" expanded="false" />
                 <element signature="e#294#1361#0" expanded="false" />
                 <element signature="e#1397#1612#0" expanded="false" />
+                <element signature="e#8004#8050#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -186,7 +187,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -308,6 +308,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,7 +528,11 @@
       <created>1390864398137</created>
       <updated>1390864398137</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="resize working properly with se resize and nw resize">
+      <created>1391178327710</created>
+      <updated>1391178327710</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -604,7 +609,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added handles to the dropTarget, they move with dragging the whole dropTarget, now need to added movement with resize" />
+    <option name="LAST_COMMIT_MESSAGE" value="resize working properly with se resize and nw resize" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -630,6 +635,7 @@
     <MESSAGE value="changed to new implementation of drag and resize for the rectangle - all working" />
     <MESSAGE value="added resize to image in the dropTarget" />
     <MESSAGE value="added handles to the dropTarget, they move with dragging the whole dropTarget, now need to added movement with resize" />
+    <MESSAGE value="resize working properly with se resize and nw resize" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -661,6 +667,7 @@
             <element signature="e#173#258#0" expanded="false" />
             <element signature="e#294#1361#0" expanded="false" />
             <element signature="e#1397#1612#0" expanded="false" />
+            <element signature="e#8004#8050#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -743,11 +750,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="87" selection-start="4749" selection-end="4749" vertical-scroll-proportion="0.46">
+        <state line="139" column="60" selection-start="4629" selection-end="4629" vertical-scroll-proportion="0.44941175">
           <folding>
             <element signature="e#173#258#0" expanded="false" />
             <element signature="e#294#1361#0" expanded="false" />
             <element signature="e#1397#1612#0" expanded="false" />
+            <element signature="e#8004#8050#0" expanded="false" />
           </folding>
         </state>
       </provider>

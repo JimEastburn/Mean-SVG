@@ -75,6 +75,14 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             this.oy = this[0].attr('y');
             this.ow = this[0].attr('width');
             this.oh = this[0].attr('height');
+            this.nwX = this[2].attr('x');
+            this.nwY = this[2].attr('y');
+            this.neX = this[3].attr('x');
+            this.neY = this[3].attr('y');
+            this.seX = this[4].attr('x');
+            this.seY = this[4].attr('y');
+            this.swX = this[5].attr('x');
+            this.swY = this[5].attr('y');
 
             this.dragging = true;
         };
@@ -85,35 +93,39 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
             switch (this.attr('cursor')) {
 
                 case 'nw-resize' :    //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
-                    this[0].attr({
+                    this[0].attr({          //working
                         x:  e.offsetX,
                         y:  e.offsetY,
                         width: this.ow - dx,
                         height: this.oh - dy
                     });
 
-                    this[1].attr({
+                    this[1].attr({          //working
                         x:  e.offsetX,
                         y:  e.offsetY,
                         width: this.ow - dx,
                         height: this.oh - dy
                     });
 
-                    this[2].attr({//topLeft
+                    this[2].attr({//topLeft nw   working
                         x:  e.offsetX -10,
                         y:  e.offsetY - 10
                     });
 
-                    this[3].attr({//topRight
-                        y:  e.offsetY -10
+                    this[3].attr({//topRight  ne  working
+                        x:  e.offsetX + (this.ow - dx),
+                        y:  e.offsetY - 10
+
                     });
 
-                    this[4].attr({//bottomRight
-                       //no change
+                    this[4].attr({//bottomRight   se  working
+                        x:  e.offsetX + (this.ow - dx),
+                        y:  e.offsetY + (this.oh - dy)
                     });
 
-                    this[5].attr({//bottomLeft
-                        x:  e.offsetX -10
+                    this[5].attr({//bottomLeft  sw   working
+                        x:  e.offsetX - 10 ,
+                        y:  e.offsetY + (this.oh - dy)
                     });
                     break;
 
@@ -130,21 +142,21 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         height: this.oh - dy
                     });
 
-                    this[2].attr({//topLeft
-                        y:  e.offsetY -10
+                    this[2].attr({//topLeft nw
+
                     });
 
-                    this[3].attr({//topRight
-                        x:  e.offsetX,
-                        y:  e.offsetY -10
+                    this[3].attr({//topRight  ne
+
+
                     });
 
-                    this[4].attr({//bottomRight
-                        x:  e.offsetX
+                    this[4].attr({//bottomRight   se
+
                     });
 
-                    this[5].attr({//bottomLeft
-                        //no change
+                    this[5].attr({//bottomLeft  sw
+
                     });
                     break;
 
@@ -159,20 +171,20 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         height: e.offsetY - this.oy
                     });
 
-                    this[2].attr({//topLeft
+                    this[2].attr({//topLeft works
                         //no changes
                     });
 
-                    this[3].attr({//topRight
+                    this[3].attr({//topRight works
                         x:  e.offsetX
                     });
 
-                    this[4].attr({//bottomRight
+                    this[4].attr({//bottomRight  works
                         x:  e.offsetX ,
                         y:  e.offsetY
                     });
 
-                    this[5].attr({//bottomLeft
+                    this[5].attr({//bottomLeft  works
                         y:  e.offsetY
                     });
 

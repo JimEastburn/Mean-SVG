@@ -57,11 +57,6 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 
         var image = s.image("/../img/Chrysanthemum.jpg", 100, 100, 200, 200);
 
-//        var topLeft = s.rect(90, 90, 10, 10);
-//        var topRight = s.rect(300, 90, 10, 10);
-//        var bottomRight = s.rect(300, 300, 10, 10);
-//        var bottomLeft = s.rect(90, 300, 10, 10);
-
         var topLeft = s.circle(100, 100, 7);
         var topRight = s.circle(300, 100, 7);
         var bottomRight = s.circle(300, 300, 7);
@@ -104,29 +99,29 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         height: this.oh - dy
                     });
 
-                    this[2].attr({//topLeft nw   working
+                    this[2].attr({//topLeft nw   
                         cx:  e.offsetX,
                         cy:  e.offsetY
                     });
 
-                    this[3].attr({//topRight  ne  working
+                    this[3].attr({//topRight  ne 
                         cx:  e.offsetX + (this.ow - dx),
                         cy:  e.offsetY
 
                     });
 
-                    this[4].attr({//bottomRight   se  working
+                    this[4].attr({//bottomRight   se 
                         cx:  e.offsetX + (this.ow - dx),
                         cy:  e.offsetY + (this.oh - dy)
                     });
 
-                    this[5].attr({//bottomLeft  sw   working
+                    this[5].attr({//bottomLeft  sw  
                         cx:  e.offsetX  ,
                         cy:  e.offsetY + (this.oh - dy)
                     });
                     break;
 
-                case 'ne-resize' :    //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                case 'ne-resize' :
                     this[0].attr({
                         y: e.offsetY,
                         width: e.offsetX - this.ox,
@@ -144,13 +139,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         cy:  e.offsetY
                     });
 
-                    this[3].attr({//topRight  ne  works
-                        cx:  e.offsetX ,
+                    this[3].attr({//topRight  ne 
+                        cx:  e.offsetX,
                         cy:  e.offsetY
 
                     });
 
-                    this[4].attr({//bottomRight   se  works
+                    this[4].attr({//bottomRight   se  
                         cx:  e.offsetX,
                         cy:  (e.offsetY) + (this.oh - dy)
                     });
@@ -161,7 +156,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                     });
                     break;
 
-                case 'se-resize' :   //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                case 'se-resize' :
                     this[0].attr({
                         width: e.offsetX - this.ox,
                         height: e.offsetY - this.oy
@@ -172,27 +167,27 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         height: e.offsetY - this.oy
                     });
 
-                    this[2].attr({//topLeft works
+                    this[2].attr({//topLeft 
                         //no changes
                     });
 
-                    this[3].attr({//topRight works
+                    this[3].attr({//topRight 
                         cx:  e.offsetX
                     });
 
-                    this[4].attr({//bottomRight  works
+                    this[4].attr({//bottomRight  
                         cx:  e.offsetX ,
                         cy:  e.offsetY
                     });
 
-                    this[5].attr({//bottomLeft  works
+                    this[5].attr({//bottomLeft  
                         cy:  e.offsetY
                     });
 
 
                     break;
 
-                case 'sw-resize' :   //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
+                case 'sw-resize' :
                     this[0].attr({
                         x: e.offsetX,
                         width: this.ow - dx,
@@ -205,32 +200,28 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
                         height: e.offsetY - this.oy
                     });
 
-                    this[2].attr({//topLeft works
-                        //no changes
+                    this[2].attr({
+                        cx:  e.offsetX
                     });
 
-                    this[3].attr({//topRight works
-//                        cx:  e.offsetX
-                    });
 
-                    this[4].attr({//bottomRight  works
-
-                        cy:  e.offsetY + (this.oy )
+                    this[4].attr({
+                        cy:  e.offsetY
                     });
 
                     this[5].attr({//bottomLeft  works
-                        cx:  e.offsetX ,
+                        cx:  e.offsetX,
                         cy:  e.offsetY
                     });
                     break;
 
-                default :             //bigSquare-0, image-1, topLeft-2, topRight-3, bottomRight-4, bottomLeft-5
-                    this[0].attr({//bigSquare
+                default :
+                    this[0].attr({
                         x:  e.offsetX - (this.ow *.5) ,
                         y:  e.offsetY - (this.oh *.5)
                     });
 
-                    this[1].attr({//image
+                    this[1].attr({
                         x:  e.offsetX - (this.ow *.5) ,
                         y:  e.offsetY - (this.oh *.5)
                     });
